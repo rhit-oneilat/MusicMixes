@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for stunning visual design
+# Custom CSS
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
@@ -928,10 +928,8 @@ if not df.empty and 'title' in df.columns:
                 - Disabling 'exact matches only'
                 """)
             else:
-                # Display results in a more attractive format
                 st.markdown("### 📝 Search Results")
 
-                # Create tabs for different views
                 tab1, tab2 = st.tabs(["🎵 Song List", "📊 Analysis"])
 
                 with tab1:
@@ -1163,7 +1161,7 @@ if not df.empty and 'title' in df.columns:
                                         box-shadow: 0 10px 30px rgba(0,0,0,0.1);
                                         border: 1px solid rgba(102, 126, 234, 0.1);">
                                 <div style="font-size: 4rem; margin-bottom: 1rem;">🎯</div>
-                                <h4 style="color: #2c3e50; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">Ready to reveal the AI's prediction?</h4>
+                                <h4 style="color: #2c3e50; margin-bottom: 1rem; font-family: 'Poppins', sans-serif;">Ready to reveal the prediction?</h4>
                                 <p style="color: #6c757d; font-family: 'Inter', sans-serif;">Click below to see how well our model performed!</p>
                             </div>
                             """, unsafe_allow_html=True)
